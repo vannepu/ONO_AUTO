@@ -8,7 +8,7 @@ from playwright.sync_api import Playwright, sync_playwright, expect
 def test_onologin(playwright: Playwright):
     # Use a breakpoint in the code line below to debug your script.
     # print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
-    browser = playwright.chromium.launch(headless=true)
+    browser = playwright.chromium.launch(headless=True)
     context = browser.new_context()
     page = context.new_page()
     page.goto("https://dev-mos.onoark.com/languageSelection")
