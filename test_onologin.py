@@ -17,6 +17,7 @@ def test_onologin(playwright: Playwright):
     page.get_by_role("button", name="LOGIN").click()
     page.get_by_role("textbox").fill("123456")
     page.get_by_role("button", name="CONTINUE").click()
+    page.screenshot(path="success_screenshot.png")
     # ---------------------
     context.close()
     browser.close()
